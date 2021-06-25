@@ -102,9 +102,3 @@ input[type="text"]::placeholder {
   border: none;
   align-items: center;
 }
-
-.icon {
-  background: transparent;
-  position: relative;
-  word-wrap: break-word;
-}
