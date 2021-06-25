@@ -43,7 +43,7 @@ app.post("/",function(req,res){
     res.redirect('/');
 });
 
-
+/*
 app.post("/delete",function(req,res){
     const index=req.body.done;
     Item.findByIdAndRemove(index,function(err){
@@ -52,7 +52,7 @@ app.post("/delete",function(req,res){
         }
     });
     
-});
+});*/
 /*app.get("/delete", function(req,res){
     res.render("list",{removeItems:removeList});
 })*/
