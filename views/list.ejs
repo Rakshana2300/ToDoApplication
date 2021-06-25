@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Londrina+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1><%= day %></h1>
+    </div>
+    
+    <div class="main">
+        <% items.forEach(function(item){ %>
+            <div class="item">
+                <form action="/delete" method="post">
+                    <input type="checkbox" name="done" id="done" value="<%= item._id %>"  onChange = "this.form.submit()" >
+                    <p><%= item.name %></p>
+                </form>
+
+            </div>
+        <% }) %>
+            <form class="item" action="/" method="post">
+                <input type="text" name="work" id="work" placeholder="Type in here" autocomplete="off">
+                <button class="btn" type="submit">+</button>
+            </form>
+
+    </div>
+    
+</body>
+</html>

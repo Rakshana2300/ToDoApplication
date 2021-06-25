@@ -1,0 +1,110 @@
+body {
+  background-image: url("../images/img1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Londrina Shadow", cursive;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.main {
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  align-items: center;
+}
+
+.btn {
+  background: #ff9524;
+  background-image: -webkit-linear-gradient(top, #ff9524, #f03a1a);
+  background-image: -moz-linear-gradient(top, #ff9524, #f03a1a);
+  background-image: -ms-linear-gradient(top, #ff9524, #f03a1a);
+  background-image: -o-linear-gradient(top, #ff9524, #f03a1a);
+  background-image: linear-gradient(to bottom, #ff9524, #f03a1a);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border-color: transparent;
+}
+
+.btn:hover {
+  background: #ff8303;
+  background-image: -webkit-linear-gradient(top, #ff8303, #ff6701);
+  background-image: -moz-linear-gradient(top, #ff8303, #ff6701);
+  background-image: -ms-linear-gradient(top, #ff8303, #ff6701);
+  background-image: -o-linear-gradient(top, #ff8303, #ff6701);
+  background-image: linear-gradient(to bottom, #ff8303, #ff6701);
+  text-decoration: none;
+}
+p {
+  display: inline-block;
+  font-size: 26px;
+  font-family: "Akaya Telivigala", cursive;
+  word-wrap: break-word;
+}
+input[type="checkbox"]:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #f03a1a;
+  word-wrap: break-word;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+input[type="text"] {
+  padding-right: 20px;
+  margin: 50px;
+  border: transparent;
+  background-color: transparent;
+}
+input[type="text"]:focus {
+  outline: transparent;
+  border-bottom: 2px solid #ff9524;
+}
+input[type="text"]::placeholder {
+  font-size: 16px;
+}
+
+.delete {
+  margin: 20px;
+  position: relative;
+  align-items: center;
+  background: transparent;
+  border: none;
+  align-items: center;
+}
+
+.icon {
+  background: transparent;
+  position: relative;
+  word-wrap: break-word;
+}
