@@ -9,7 +9,7 @@ app.use(express.static(__dirname+"/public"));
 
 app.set('view engine','ejs');
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser : true});
+mongoose.connect("mongodb+srv://rakshana2303:rd@MONGO2300@todolistcluster.cvarr.mongodb.net/todoListDB", {useNewUrlParser : true});
 
 const itemSchema = {
     name : String
@@ -57,6 +57,6 @@ app.post("/delete",function(req,res){
     res.render("list",{removeItems:removeList});
 })*/
 
-app.listen(7000,function(){
+app.listen(process.env.PORT,function(){
     console.log("Listening");
 });
