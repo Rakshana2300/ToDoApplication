@@ -9,7 +9,7 @@ app.use(express.static(__dirname+"/public"));
 
 app.set('view engine','ejs');
 
-mongoose.connect("mongodb+srv://rakshana2303:rd@MONGO2300@todolistcluster.cvarr.mongodb.net/todoListDB", {useNewUrlParser : true});
+mongoose.connect("mongodb+srv://rakshana2303:rd@MONGO2300@todolistcluster.cvarr.mongodb.net/todoListDB?ssl=true", {useNewUrlParser : true});
 
 //mongoose.connect("mongodb://localhost:27017/todolistDB",{useNewUrlParser:true});
 
@@ -70,6 +70,6 @@ app.listen(7000,function(){
 
 let port =process.env.PORT;
 
-app.listen(port||3000, function(){
+app.listen(port || 7000, function(){
    
 });
