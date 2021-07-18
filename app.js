@@ -9,9 +9,8 @@ app.use(express.static(__dirname+"/public"));
 
 app.set('view engine','ejs');
 
-mongoose.connect("mongodb+srv://rakshana2303:rd@MONGO2300@todolistcluster.cvarr.mongodb.net/todoListDB?ssl=true", {useNewUrlParser : true});
+mongoose.connect(/*your server name*/, {useNewUrlParser : true});
 
-//mongoose.connect("mongodb://localhost:27017/todolistDB",{useNewUrlParser:true});
 
 const itemSchema = {
     name : String
